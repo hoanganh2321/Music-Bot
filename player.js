@@ -158,7 +158,7 @@ function initializePlayer(client) {
                     iconURL: 'https://cdn.discordapp.com/attachments/1230824451990622299/1230836684774576168/7762-verified-blue.gif?ex=6638b97d&is=663767fd&hm=021725868cbbc66f35d2b980585489f93e9fd366aa57640732dc49e7da9a80ee&', 
                     url: 'https://discord.gg/XBHZUwqAzK'
                 })
-                .setDescription('**Loop is Disabled !**');
+                .setDescription('**lặp lại is Disabled !**');
                   
     
             await channel.send({ embeds: [loopEmbed] });
@@ -168,7 +168,7 @@ const pageSize = 10;
 
 const queueMessage = queueNames.length > 0 ?
     queueNames.map((song, index) => `${index + 1}. ${song}`).join('\n') :
-    "The queue is empty.";
+    "Danh Sách Chờ Trống.";
 
 
 const pages = [];
@@ -182,7 +182,7 @@ for (let i = 0; i < pages.length; i++) {
 
     const queueEmbed = new EmbedBuilder()
         .setColor("#0099ff")
-        .setTitle(`Current Queue (Page ${i + 1}/${pages.length})`)
+        .setTitle(`Danh Sách Chờ (Page ${i + 1}/${pages.length})`)
         .setDescription(numberedSongs);
 
     await channel.send({ embeds: [queueEmbed] });

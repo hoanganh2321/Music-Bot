@@ -29,10 +29,9 @@ module.exports = {
   run: async (client, interaction) => {
     try {
 
-      const supportServerLink = "https://discord.gg/xQF9f9yUEM";
-      const githubLink = "https://github.com/GlaceYT";
-      const replitLink = "https://replit.com/@GlaceYT";
-      const youtubeLink = "https://www.youtube.com/@GlaceYT";
+      const supportServerLink = "https://discord.gg/XBHZUwqAzK";
+      const FacebookLink = "https://www.facebook.com/Cheezze221/";
+
         const embed = new EmbedBuilder()
             .setColor('#b300ff')
             .setAuthor({
@@ -40,8 +39,8 @@ module.exports = {
               iconURL: 'https://cdn.discordapp.com/attachments/1230824451990622299/1230824519220985896/6280-2.gif?ex=6638ae28&is=66375ca8&hm=13e4a1b91a95b2934a39de1876e66c11711c7b30ac1a91c2a158f2f2ed1c2fc6&', 
               url: 'https://discord.gg/xQF9f9yUEM'
           })
-            .setDescription(`➡️ **Join our Discord server for support and updates:**\n- Discord - ${supportServerLink}\n\n➡️ **Follow us on:**\n- GitHub - ${githubLink}\n- Replit - ${replitLink}\n- YouTube - ${youtubeLink}`)
-            .setImage('https://cdn.discordapp.com/attachments/1113800537402527903/1236803979996958740/11.png?ex=663956f7&is=66380577&hm=3b3c19a11adcb979517a133f2907f671305d23f1f5092cf7df043e6d5cab07bc&')
+            .setDescription(`➡️ **Join our Discord server for support and updates:**\n- Discord - ${supportServerLink}\n\n➡️ **Follow us on:**\n- Facebook - ${FacebookLink}\n`)
+            .setImage('https://cdn.discordapp.com/attachments/1235508539439714314/1235577227505041469/taoanhdep_cover_glitch_44024.png?ex=663d7236&is=663c20b6&hm=79a8b3a7e999051056e181b8c5469316a921038607f1f5ce5ff145f9bca9fe2f&')
             .setTimestamp();
 
       return interaction.reply({ embeds: [embed] });

@@ -74,7 +74,7 @@ function initializePlayer(client) {
 
         const queueLoopButton = new ButtonBuilder()
             .setCustomId("loopQueue")
-            .setLabel("Danh Sách Chờ")
+            .setLabel("Lặp Lại")
             .setStyle(ButtonStyle.Primary);
 
         const disableLoopButton = new ButtonBuilder()
@@ -126,12 +126,12 @@ function initializePlayer(client) {
                 setLoop(player, 'queue');
                 const loopEmbed = new EmbedBuilder()
             .setAuthor({
-                    name: 'Danh Sách Chờ!',
+                    name: 'Lặp Lại',
                     iconURL: 'https://cdn.discordapp.com/attachments/1156866389819281418/1157318080670728283/7905-repeat.gif?ex=66383bb4&is=6636ea34&hm=65f37cf88245f1c09285b547fda57b82828b3bbcda855e184f446d6ff43756b3&', 
                     url: 'https://discord.gg/XBHZUwqAzK'
                 })
             .setColor("#00FF00")
-            .setTitle("**Danh Sách Chờ is Activated!**")
+            .setTitle("**Lặp lại is Activated!**")
          
 
         await channel.send({ embeds: [loopEmbed] });

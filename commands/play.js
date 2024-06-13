@@ -61,7 +61,8 @@ async function play(client, interaction) {
             const errorEmbed = new EmbedBuilder()
                 .setColor('#ff0000')
                 .setTitle('Error')
-                .setDescription('There are no results found.');
+ .setTimestamp()
+        .setFooter({ text: 'Made by Hoàng Anh', iconURL: 'https://images-ext-1.discordapp.net/external/COKaNwRdStOg-hxsUbHc018NBo_hzqZaaJil_VcU9PA/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/779507251282968587/551c11debd9c5c01f6704bb7442068a4.png?format=webp&quality=lossless' });
 
         
             await interaction.editReply({ embeds: [errorEmbed] });
